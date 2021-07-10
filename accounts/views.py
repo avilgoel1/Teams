@@ -34,7 +34,7 @@ def index(request):
                     print(data.email)
                     data.save()
                     print("user saved")
-                    messages.success(request, 'Account crated succesfully.')
+                    messages.success(request, 'Account created succesfully.')
                     return render(request,"index.html")
                 else:
                     context="Length must be greter then 8"
